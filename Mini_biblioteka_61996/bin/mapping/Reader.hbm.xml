@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping namespace="Mini_biblioteka_61996.mapping" assembly="Mini_biblioteka_61996" xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="Reader" table="reader">
+
+
+		<id name="Id" type="Int32" column="id">
+
+			<generator class="native"/>
+
+		</id>
+
+		<property name="Name" type="String" column="name" length="50"/>
+		<property name="Surname" type="String" column="surname" length="50"/>
+		<property name="Street" type="String" column="street" length="50"/>
+		<property name="StreetNumber" type="Int32" column="streetnumber" length="50"/>
+		<property name="PostCode" type="Int32" column="postcode" length="50"/>
+
+
+	</class>
+</hibernate-mapping>

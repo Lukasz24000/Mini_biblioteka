@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping namespace="Mini_biblioteka_61996.mapping" assembly="Mini_biblioteka_61996" xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Book" table="book">
+
+
+		<id name="Id" type="Int32" column="id">
+			<generator class="native"/>
+		</id>
+
+		<property name="Title" type="String" column="title" length="50"/>
+		<property name="Author" type="String" column="author" length="50"/>
+		<property name="Year" type="Int32" column="year" length="50"/>
+		
+	</class>
+</hibernate-mapping>

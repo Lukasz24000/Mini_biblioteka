@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping namespace="Mini_biblioteka_61996.mapping" assembly="Mini_biblioteka_61996" xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="Borrowing" table="borrowing">
+
+
+		<id name="Id" type="Int32" column="id">
+
+			<generator class="native"/>
+
+		</id>
+
+
+		<property name="BorrowDate" type="DateTime" column="borrowdate" length="50"/>
+		<property name="ReturnDate" type="DateTime" column="returndate" length="50"/>
+
+
+
+		<many-to-one name="Book" class="Mini_biblioteka_61996.mapping.Book" column ="id_book" fetch="select" cascade="none"></many-to-one>
+		<many-to-one name="Reader" class="Mini_biblioteka_61996.mapping.Reader" column ="id_reader" fetch="select" cascade="none"></many-to-one>
+	</class>
+</hibernate-mapping>
+
